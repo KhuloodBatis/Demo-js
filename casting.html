@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+
+    <title>casting</title>
+</head>
+
+<body>
+    <script>
+        var x = "10"
+        var y = "20"
+        console.log(x + y) //1020
+            //casting number 
+        console.log(Number(x) + y) //1020
+        console.log(Number(x) + Number(y)) //30//casting will work insad the console only
+
+        console.log(typeof x) //casting will work insad the console only
+        x = Number(x) //now will be work
+        console.log(typeof x)
+
+        //cating string 
+
+        var h = 10
+        var k = 20
+        console.log(h + k)
+        console.log(String(h) + String(k)) //concatnation
+        console.log(h.toString() + String(k)) //concatnation
+
+
+        //casting Boolean
+        var s = true
+        var d = 2
+        console.log(s)
+        console.log(String(s))
+    </script>
+</body>
+
+</html>

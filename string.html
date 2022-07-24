@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+
+    <title>String</title>
+</head>
+
+<body>
+    <!-- <h2 id="title">Hello World</h2> -->
+    <!-- <form name="word" onsubmit="return getWord()" method="post">
+        Word: <input type="text" name="wordFormat">
+        <input type="button" onclick=getWord() value="Display">
+    </form>
+    <div id="result"></div> -->
+    <!-- he solution -->
+
+    <h1>write any word:</h1>
+    <input type="text" id="string-input">
+    <button id="submit-btn">submit</button>
+    <div id="result"></div>
+
+
+    <script>
+        // var title = document.getElementById("title").innerHTML
+        // console.log(title)
+        // var titleUpperCase = title.toUpperCase()
+        // var titleNew = titleUpperCase.replace("O", "Y")
+        // var reverseTitle = titleNew.split("").reverse().join("");
+        // newValue = document.getElementById("result").innerHTML = `${titleUpperCase}<br>${titleNew }<br>${reverseTitle}`
+        // <!-- my solution -->
+
+        // function getWord() {
+        //     let x = document.forms["word"]["wordFormat"].value;
+        //     var titleUpperCase = x.toUpperCase()
+        //     var titleNew = titleUpperCase.replace("O", "Y")
+        //     var reverseTitle = titleNew.split("").reverse().join("");
+        //     newValue = document.getElementById("result").innerHTML = `${titleUpperCase}<br>${titleNew }<br>${reverseTitle}`
+        //     return newValue
+        // }
+        // <!-- he solution -->
+        document.getElementById("submit-btn").addEventListener("click", function() {
+            console.log("click")
+            var myStr = document.getElementById("string-input").value
+            console.log(myStr)
+            var titleUpperCase = myStr.toUpperCase()
+            var titleNew = titleUpperCase.replace("O", "Y")
+            var reverseTitle = titleNew.split("").reverse().join("");
+            document.getElementById("result").innerHTML = `${titleUpperCase}<br>${titleNew }<br>${reverseTitle}`
+
+        })
+    </script>
+
+    <script>
+        // var title = "Hello World"
+        // console.log(title.substring(1, 5)) //ello
+        // console.log(title.substring(0, 7)) //Hello W
+        // console.log(title.substring(0, 8)) //Hello Wo
+        // console.log(title.length) //11
+        // console.log(title.toUpperCase(title)) //HELLO WORLD
+        // console.log(title.toLowerCase(title)) //hello world
+        // console.log(title.replace("l", "r")) //Herlo World
+        // console.log(title.replace("Hello", "r")) //r World
+        // var titleLowerCased = title.toLowerCase()
+        // console.log(titleLowerCased.replace("hello", "welcome")) //welcome world
+        // console.log(title.charAt(1)) //e
+        // var mychar = title.charAt(6)
+        // console.log(mychar) //W
+        // console.log(typeof mychar) //string
+        // console.log(title[0]) //H
+        // var name = "koolfzr"
+        // console.log(title + " " + name) //Hello World koolfzr
+        // console.log("Hello " + name + ",welocome to my course") //Hello koolfzr,welocome to my course
+        // console.log(`Hello ${name},welocome to my course`) //Hello koolfzr,welocome to my course
+
+        //console.log(title) //Hello World
+        // var titleUpperCase = title.toUpperCase()
+        // console.log(title, '\n', titleUpperCase) //HELLO WORLD
+        // var titleNew = titleUpperCase.replace("O", "Y")
+        // console.log(titleNew) //HELLY WORLD
+
+        // function reverse(s) {
+        //     return s.split("").reverse().join("");
+        // }
+        // var reverseTitle = titleNew.split("").reverse().join("");
+        // console.log(reverse(titleNew)) //DLROW YLLEH
+        // document.getElementById("title").innerHTML = `${title}<br>${titleUpperCase}<br>${titleNew }<br>${reverseTitle}`
+    </script>
+
+</body>
+
+</html>
