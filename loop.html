@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <title>LOOP</title>
+</head>
+
+
+<body>
+    <div id="result"></div>
+    <div id="demo"></div>
+
+    <script>
+        var x = "",
+            i;
+        for (i = 1; i <= 6; i++) {
+            x = x + "<h" + i + ">Heading " + i + "</h" + i + ">";
+        }
+        document.getElementById("demo").innerHTML = x;
+    </script>
+</body>
+<script>
+    // for (var i = 0; i <= 500; i++) {
+    //     //console.log("hello Kool")
+    //     console.log(i)
+    // }
+    //even number 
+    // for (var i = 0; i <= 500; i += 2) {
+    //     //console.log("hello Kool")
+    //     console.log(i)
+    // }
+    // for (var i = 0; i <= 500; i++) {
+    //     i += 2
+    //     console.log(i)
+    // }
+
+    // for (var i = 0; i <= 500; i++) {
+    //     if (i % 2 == 0) {
+    //         console.log(i)
+    //     }
+
+    // }
+    var num = 10
+    for (var i = 0; i <= 30; i++) {
+        var sum = i * num
+            //var numbers = console.log(num + "x" + i + "=" + sum)
+        document.getElementById("result").innerHTML += `${num} + "x" + ${i}+"="+${sum}</br>`
+    }
+</script>
+
+</html>

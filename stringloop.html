@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <title>String_LOOP</title>
+</head>
+
+
+<body>
+    <div style="text-align: center">
+        <h1>Vowel Letters:(A,E,I,O,U)</h1>
+        <input type="text" id="input">
+        <button id="submit">submit</button>
+        <div id="display"></div>
+    </div>
+
+</body>
+
+<script>
+    document.getElementById("submit").addEventListener("click", function() {
+        console.log("click")
+        var str = document.getElementById("input").value
+        for (var i = 0; i < str.length; i++) {
+            //way1 
+
+            // var strvoew = str.replace(/[aeiou]/, "")
+            // document.getElementById("display").innerHTML += `${strvoew[i]}<br>`
+            //document.getElementById("input").value=""
+            //console.log(str[i])
+
+
+            //way2 
+
+            // var strLower = str.toLowerCase()
+            // if (strLower[i] != "a" && strLower[i] != "e" && strLower[i] != "i" && strLower[i] != "o" && strLower[i] != "u") {
+            //     document.getElementById("display").innerHTML += `${str[i]}<br>`
+            //     document.getElementById("input").value
+            //     console.log(str[i])
+            // }
+
+            //way3
+
+            var strLower = str.toLowerCase()
+            const fruits = ["a", "e", "i", "o", "u"];
+            if (!fruits.includes(strLower)) {
+                document.getElementById("display").innerHTML += `${str[i]}<br>`
+                document.getElementById("input").value
+                console.log(str[i])
+            }
+
+
+        }
+
+        document.getElementById("input").value = ""
+    })
+</script>
+<script>
+    var name = "KOOLFZR"
+        //for loop
+        // for (var x = 0; x <= name.length; x++) {
+        //     console.log(name[x])
+        // }
+        //for IN loop
+        // for (var i in name) {
+        //     console.log(name[i])
+        // }
+        //for OF loop
+        // for (var i of name) {
+        //     console.log(i)
+        // }
+</script>
+
+
+</html>

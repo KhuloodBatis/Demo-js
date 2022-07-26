@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <title>Array</title>
+</head>
+
+<body>
+    <!-- <div id="students" style="font-size: 30px"></div> -->
+    <div style="align-items:center ; margin:200px; ">
+        <input type="text" id="str">
+        <br>
+        <button id="sub">submit</button>
+        <br>
+        <button id="del">delet</button>
+        <div id="result"></div>
+    </div>
+
+
+
+</body>
+
+<script>
+    var arr = []
+    document.getElementById("sub").addEventListener("click", function() {
+        console.log("click")
+        var str = document.getElementById("str").value
+        arr.push(str)
+        document.getElementById("result").innerHTML = `${arr}`
+        document.getElementById("str").value = ""
+
+
+    })
+
+    document.getElementById("del").addEventListener("click", function() {
+        console.log("click")
+        var str = document.getElementById("str").value
+        arr.pop(str)
+        document.getElementById("result").innerHTML = arr.toString()
+    })
+
+
+    //     })
+    // var st = "kool"
+    // document.getElementById("student").innerHTML = st
+    // var students = ["Kool", "Omer", "Ahmed", "Mohammad", "Khalid"]
+    // document.getElementById("students").innerHTML = students
+    //console.log(students)
+    // console.log(students[4])
+    // students.push("salem")
+    // console.log(students)
+
+    // students.pop()
+    // console.log(students)
+
+    //students.splice(1, 2, "kool", "jooj")
+    // students.splice(6, 0, "jody") //ازاحة 
+    // console.log(students)
+
+    // var str = ""
+    // var arr = [10, 100, 50, 49, 90, 70, 20]
+    // var isArr = Array.isArray(arr)
+    //console.log(typeof Array.isArray(str))
+    //console.log(arr.includes(50))
+    // console.log(arr.indexOf(50))
+    // console.log(arr)
+    // arr.shift()
+    // console.log(arr)
+    //     console.log(arr)
+    // arr.unshift(400)
+    // console.log(arr)
+    // console.log(arr)
+    // arr.reverse(400)
+    // console.log(arr)
+</script>
+
+</html>
